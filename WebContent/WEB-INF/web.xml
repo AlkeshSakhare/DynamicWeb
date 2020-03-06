@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>ServletTutorial</display-name>
+	<servlet>
+		<servlet-name>Add</servlet-name>
+		<servlet-class>com.demo.Add</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Add</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ReqDispDemoServlet</servlet-name>
+		<servlet-class>com.demo.ReqDispDemoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReqDispDemoServlet</servlet-name>
+		<url-pattern>/rdDemo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ReqReDirectDemo</servlet-name>
+		<servlet-class>com.demo.ReqReDirectDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReqReDirectDemo</servlet-name>
+		<url-pattern>/redirectDemo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>HttpSessionDemo</servlet-name>
+		<servlet-class>com.demo.HttpSessionDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HttpSessionDemo</servlet-name>
+		<url-pattern>/httpsessionDemo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>CookieDemo</servlet-name>
+		<servlet-class>com.demo.CookieDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CookieDemo</servlet-name>
+		<url-pattern>/cookieDemo</url-pattern>
+	</servlet-mapping>
+</web-app>
