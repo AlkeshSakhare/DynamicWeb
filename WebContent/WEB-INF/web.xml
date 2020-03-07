@@ -7,11 +7,20 @@
 	<servlet>
 		<servlet-name>Add</servlet-name>
 		<servlet-class>com.demo.Add</servlet-class>
+		<init-param>
+			<param-name>servletInit</param-name>
+			<param-value>AddServletConfig</param-value>
+		</init-param>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>Add</servlet-name>
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
+	<context-param>
+	<param-name>servletInit</param-name>
+	<param-value>AddServletContext</param-value>
+	</context-param>
+	
 	<servlet>
 		<servlet-name>ReqDispDemoServlet</servlet-name>
 		<servlet-class>com.demo.ReqDispDemoServlet</servlet-class>
