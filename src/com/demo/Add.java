@@ -75,5 +75,20 @@ public class Add extends HttpServlet {
 		ServletConfig config = getServletConfig();
 		String valueOfServletConfig = config.getInitParameter("servletInit");
 		System.out.println("valueOfServletConfig = " + valueOfServletConfig);
+
+		/*
+		 * There are two ways to do servlet mapping
+		 * 
+		 * 1.Web.xml
+		 * 
+		 * <servlet> <servlet-name>CookieDemo</servlet-name>
+		 * <servlet-class>com.demo.CookieDemo</servlet-class> </servlet>
+		 * <servlet-mapping> <servlet-name>CookieDemo</servlet-name>
+		 * <url-pattern>/cookieDemo</url-pattern> </servlet-mapping>
+		 * 
+		 * 2.@WebServlet annotation in servlet class--- eg.@WebServlet("/cookieDemo")
+		 * 
+		 */
+
 	}
 }

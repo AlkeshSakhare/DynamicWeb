@@ -17,10 +17,10 @@
 		<url-pattern>/add</url-pattern>
 	</servlet-mapping>
 	<context-param>
-	<param-name>servletInit</param-name>
-	<param-value>AddServletContext</param-value>
+		<param-name>servletInit</param-name>
+		<param-value>AddServletContext</param-value>
 	</context-param>
-	
+
 	<servlet>
 		<servlet-name>ReqDispDemoServlet</servlet-name>
 		<servlet-class>com.demo.ReqDispDemoServlet</servlet-class>
@@ -45,12 +45,13 @@
 		<servlet-name>HttpSessionDemo</servlet-name>
 		<url-pattern>/httpsessionDemo</url-pattern>
 	</servlet-mapping>
-	<servlet>
+	<!-- <servlet>
 		<servlet-name>CookieDemo</servlet-name>
 		<servlet-class>com.demo.CookieDemo</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>CookieDemo</servlet-name>
 		<url-pattern>/cookieDemo</url-pattern>
-	</servlet-mapping>
+	</servlet-mapping> -->
+	<!-- use - ctrl+shift+/ to comment use- ctrl+shift+\ to uncomment -->
 </web-app>
